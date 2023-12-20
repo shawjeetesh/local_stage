@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "786496584309",
+    "project_id": "local-stage-1d39c",
+    "storage_bucket": "local-stage-1d39c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786496584309:android:36bcee5054d7a76701963c",
+        "android_client_info": {
+          "package_name": "com.local_stage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvP--aPEndvxTJ-Y2AUZETnPi6TouOR_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
