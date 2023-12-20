@@ -20,6 +20,7 @@ client.interceptors.request.use(
         const accessToken = await AsyncStorage.getItem("@access_token");
         if(accessToken)
         config.headers["Authorization"]="Bearer " + accessToken;
+        console.log("API Call: "+ config.method+" "+ config.url, config.data||{})
         return config
     },
     (error)=>{
@@ -30,6 +31,8 @@ client.interceptors.request.use(
 
 client.interceptors.response.use(
     async(response)=>{
+        console.log("API Response: status:"+response.status+" "+ response.config.method+" "+ response.config.url+" fullfilled");
+
         return response
     },
     async(error)=>{
