@@ -17,6 +17,10 @@ const AuthRoutesDataSet:ScreenConfig[] = [
         name:"Welcome",
         component : Welcome
     },
+    
+]
+const MainRoutesDataSet:ScreenConfig[] = [
+ 
     {
         name:"Home",
         component : Home,
@@ -27,5 +31,6 @@ const AuthRoutesDataSet:ScreenConfig[] = [
 
 
 export {
-    AuthRoutesDataSet
+    AuthRoutesDataSet,
+    MainRoutesDataSet
 }

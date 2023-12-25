@@ -7,6 +7,7 @@ import { useQuery } from '@tanstack/react-query'
 import useSampleQuery from '../../../Query/useSampleQuery'
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../../Routes/Auth.Stack'
+import Test from '../../Test'
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Welcome'>;
 interface WelcomeProps{
@@ -32,6 +33,7 @@ const Welcome:FC<WelcomeProps> = () => {
     <View style={styles.container}>
       <Text>Please Provie A Mobile Number {isLoading && "loading"} {data &&  JSON.stringify(data)}</Text>
       <Button title='Click' onPress={__IncreaseNumber} />
+      <Test />
     </View>
   )
 }
