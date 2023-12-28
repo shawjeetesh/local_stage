@@ -1,7 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import axios from "axios";
 import { baseurl } from "./base";
-
+import auth from "@react-native-firebase/auth"
 let headerConfig = {
     'Content-Type': 'application/json',
     Accept: 'application/json',
@@ -17,10 +17,10 @@ const client = axios.create({
 
 client.interceptors.request.use(
     async(config)=>{
-        const accessToken = await AsyncStorage.getItem("@access_token");
+        const accessToken = await auth().currentUser?.getIdToken() || "";
         if(accessToken)
-        config.headers["Authorization"]="Bearer " + accessToken;
-        console.log("API Call: "+ config.method+" "+ config.url, config.data||{})
+        config.headers["Authorization"]=accessToken;
+        console.log("API Call: "+ config.method+" "+ config.baseURL+config.url, config.data||{})
         return config
     },
     (error)=>{
