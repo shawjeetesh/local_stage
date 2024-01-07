@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from 'react'
-import Welcome from "../Screen/Auth/Welcome/Welcome";
+import Welcome from "../Screen/Auth/Welcome/Welcome.screen";
 import { AuthRoutesDataSet } from "../static/routes.static";
 
 export type RootStackParamList = {
@@ -18,6 +18,7 @@ const AuthStack = () => {
         animation:"fade",
         orientation:"portrait",
         statusBarColor:"#000",
+        headerShown:false,
       }}>
         {AuthRoutesDataSet.map((item)=><Stack.Screen 
         // @ts-ignore

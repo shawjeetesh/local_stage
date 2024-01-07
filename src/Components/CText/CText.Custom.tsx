@@ -1,12 +1,24 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, TextProps, View } from 'react-native'
+import React, { FC } from 'react'
 
-const CTextCustom = () => {
+interface CTextCustomProps extends TextProps{
+  
+}
+
+const CTextCustom:FC<CTextCustomProps> = ({children, ...props}) => {
   return (
-      <Text>CTextCustom</Text>
+      <Text
+      {...props}
+      style={StyleSheet.compose(styles.default, props.style)}
+      >{children}</Text>
   )
 }
 
 export default CTextCustom
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  default:{
+
+    fontFamily: 'KiteOne-Regular',
+  }
+})

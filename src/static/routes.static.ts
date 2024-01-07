@@ -1,5 +1,5 @@
 import { StackNavigationState } from "@react-navigation/native";
-import Welcome from "../Screen/Auth/Welcome/Welcome";
+import Welcome from "../Screen/Auth/Welcome/Welcome.screen";
 import { RootStackParamList } from "../Routes/Auth.Stack";
 import { ReactElement } from "react";
 import Home from "../Screen/Main/Home";
