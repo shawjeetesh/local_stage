@@ -2,7 +2,7 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { FC } from 'react'
 import CTextCustom from '../../../Components/CText/CText.Custom'
 import colors from '../../../Global/Styles/colors.global'
-import data, { GetStartedCardState } from './data.static'
+import  { GetStartedCardState } from './data.static'
 import { SCREEN_HEIGHT, fontPixel, heightPixel } from '../../../Utility/normalizer'
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -33,7 +33,6 @@ const Card:FC<CardProps> = (props) => {
 }
 
 export default React.memo(Card)
-// background: linear-gradient(180deg, #603F83 0%, rgba(96, 63, 131, 0.00) 100%);
 const styles = StyleSheet.create({
     mainContainer: { position: "relative", flex: 1,
     height:SCREEN_HEIGHT,

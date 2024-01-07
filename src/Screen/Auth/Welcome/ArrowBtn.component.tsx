@@ -1,10 +1,9 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Image, StyleSheet, TouchableOpacity, View } from 'react-native'
 import React, { FC } from 'react'
 import Assets from '../../../Global/Styles/images.global'
 import * as Progress from 'react-native-progress';
 import colors from '../../../Global/Styles/colors.global';
 import LinearGradient from 'react-native-linear-gradient';
-import data from './data.static';
 
 type ArrowBtnComponentProps = {
     pos: number;
@@ -12,7 +11,6 @@ type ArrowBtnComponentProps = {
 }
 
 const ArrowBtnComponent:FC<ArrowBtnComponentProps> = (props) => {
-    console.log("props.pos ",props.pos )
   return (
     <View style={styles.footerContainer}>
         <TouchableOpacity style={styles.footerArrowBtn} onPress={props.onClick}>

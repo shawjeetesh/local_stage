@@ -1,7 +1,3 @@
-// const data=[
-//     {
-//         title:"phone number",
-
 import { ImageSourcePropType, ImageStyle } from "react-native";
 import colors from "../../../Global/Styles/colors.global"
 import Assets from "../../../Global/Styles/images.global"
