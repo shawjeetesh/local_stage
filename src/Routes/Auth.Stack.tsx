@@ -6,6 +6,7 @@ import { AuthRoutesDataSet } from "../static/routes.static";
 export type RootStackParamList = {
     Welcome: undefined;
     Home: undefined;
+    OTPVerification:undefined;
 };
   
 const Stack = createNativeStackNavigator<RootStackParamList>();

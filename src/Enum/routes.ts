@@ -1,7 +1,7 @@
 const routes = {
     AUTH:{
-        WELCOME: "Welcome"
-    }
+        WELCOME: "Welcome",
+        }
 }
 
 

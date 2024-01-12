@@ -12,14 +12,15 @@ import data from './data.static'
 import Card from './Card.component'
 import { SCREEN_WIDTH } from '../../../Utility/normalizer'
 import ArrowBtnComponent from './ArrowBtn.component'
+import { useNavigation } from '@react-navigation/native'
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Welcome'>;
 interface WelcomeProps {
   route: Props["route"],
-  naviation: Props["navigation"],
+  navigation: Props["navigation"],
 }
 
-const Welcome: FC<WelcomeProps> = () => {
+const Welcome: FC<WelcomeProps> = ({navigation}) => {
   const count = useSelector((state: RootState) => state.global.count);
   const [CurrentPos, setCurrentPos] = useState(0);
   const [ExitAppPressCount, setExitAppPressCount] = useState(0)
@@ -30,10 +31,11 @@ const Welcome: FC<WelcomeProps> = () => {
     dispatch(Increase())
     // refetch()
   }
-
   const _updatePos = useCallback(()=>{
 
     CurrentPos<2 && _goToPos(CurrentPos+1)
+    CurrentPos>=2&&navigation.replace("OTPVerification")
+
   },[CurrentPos])
 
   const _goToPos = useCallback((pos:number)=>{
