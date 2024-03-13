@@ -5,10 +5,9 @@ import Wrapper from './src/Wrapper';
 import Routes from './src/Routes';
 function App() {
   return (
-      <Wrapper>
-        <Routes />
-      </Wrapper>
-
+    <Wrapper>
+      <Routes />
+    </Wrapper>
   );
 }
 
