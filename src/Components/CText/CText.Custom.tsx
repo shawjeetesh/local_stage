@@ -19,6 +19,6 @@ export default CTextCustom
 const styles = StyleSheet.create({
   default:{
 
-    fontFamily: 'KiteOne-Regular',
+    // fontFamily: 'KiteOne-Regular',
   }
 })

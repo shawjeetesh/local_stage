@@ -10,7 +10,7 @@ const Routes = () => {
   async function onAuthStateChanged(user:FirebaseAuthTypes.User | null) {
     if (user) {
         console.log("User", user);
-        console.log("res",await auth().currentUser?.getIdToken())
+        console.log("res",await auth().currentUser?.getIdToken(true))
         setUserId(user.uid)
         return
       // Some Android devices can automatically process the verification code (OTP) message, and the user would NOT need to enter the code.

@@ -38,7 +38,7 @@ function Test() {
       <Button
         title="Phone Number Sign In"
         // onPress={() => signInWithPhoneNumber('+1 650-555-3434')}
-        onPress={() => signInWithPhoneNumber('+91 824-061-3188')}
+        onPress={() => signInWithPhoneNumber('+91 987-654-3210')}
       />
     );
   }
