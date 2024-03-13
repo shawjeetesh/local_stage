@@ -49,7 +49,13 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>KiteOne-Regular.ttf</string>
+		<string>NunitoSans_Bold.ttf</string>
+		<string>NunitoSans_ExtraBold.ttf</string>
+		<string>NunitoSans_ExtraLight.ttf</string>
+		<string>NunitoSans_Light.ttf</string>
+		<string>NunitoSans_Medium.ttf</string>
+		<string>NunitoSans_Regular.ttf</string>
+		<string>NunitoSans_SemiBold.ttf</string>
 	</array>
 </dict>
 </plist>

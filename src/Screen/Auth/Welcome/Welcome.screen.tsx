@@ -16,6 +16,7 @@ import auth, { FirebaseAuthTypes } from "@react-native-firebase/auth";
 import { Avatar, TextInput } from 'react-native-paper'
 import CTextCustom from '../../../Components/CText/CText.Custom'
 import ShowSplashMessage from '../../../Utility/flashMessage'
+import FONTS from '../../../Global/fonts'
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Welcome'>;
 interface WelcomeProps {
@@ -118,9 +119,7 @@ const Welcome: FC<WelcomeProps> = () => {
   // if (isLoading) return 'Loading...'
 
   // if (error) return 'An error has occurred: ' + error.message
-  return (
-    <Test />
-  )
+  
   return (
     <View style={styles.container}>
      
@@ -129,7 +128,7 @@ const Welcome: FC<WelcomeProps> = () => {
         <View style={{flex:0.5 , justifyContent:"flex-end", alignItems:"center"}}>
           <Avatar.Text size={100} label='test'  />
           
-          <CTextCustom style={{fontWeight:"700", fontSize: fontPixel(24), color:"#000", marginTop:10}}>
+          <CTextCustom style={{fontFamily:FONTS["900"], fontSize: fontPixel(24), color:"#000", marginTop:10}}>
             Registration
           </CTextCustom>
 
